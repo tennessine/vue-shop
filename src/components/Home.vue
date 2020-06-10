@@ -25,7 +25,7 @@
         >
           <el-submenu :index="`${item.id}`" v-for="item in menuList" :key="item.id">
             <template slot="title">
-              <i class="el-icon-platform-eleme"></i>
+              <i class="el-icon-question"></i>
               <span>{{item.authName}}</span>
             </template>
             <el-menu-item
