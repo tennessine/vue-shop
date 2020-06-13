@@ -8,14 +8,13 @@ import Permissions from '../components/permission/Permissions.vue'
 import Roles from '../components/permission/Roles.vue'
 import Category from '../components/product/Category.vue'
 import Params from '../components/product/Params.vue'
+import GoodsList from '../components/product/List.vue'
+import GoodsAdd from '../components/product/Add.vue'
+import Order from '../components/order/Order.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    redirect: '/login'
-  },
   {
     path: '/login',
     component: Login
@@ -30,7 +29,10 @@ const routes = [
       { path: '/rights', component: Permissions },
       { path: '/roles', component: Roles },
       { path: '/categories', component: Category },
-      { path: '/params', component: Params }
+      { path: '/params', component: Params },
+      { path: '/goods', component: GoodsList },
+      { path: '/goods/add', component: GoodsAdd },
+      { path: '/orders', component: Order }
     ]
   }
 ]

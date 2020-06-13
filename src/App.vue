@@ -36,4 +36,10 @@ body,
 .el-aside {
   user-select: none;
 }
+.el-steps {
+  margin: 15px 0;
+}
+.el-step__title {
+  font-size: 13px !important;
+}
 </style>
